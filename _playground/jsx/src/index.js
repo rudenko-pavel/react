@@ -1,12 +1,13 @@
+// Import the React and ReactDOM librares
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import 'semantic-ui-css/semantic.min.css';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import First from './components/first/First';
+import Clock from './components/clock/Clock';
+import ViewList from './components/viewlist/ViewList';
+import './index.scss';
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDOM.render(<First />, document.getElementById('first'));
+ReactDOM.render(<Clock />, document.getElementById('clock'));
+ReactDOM.render(<ViewList />, document.getElementById('viewlist'));
